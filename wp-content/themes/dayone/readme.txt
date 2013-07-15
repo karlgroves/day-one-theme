@@ -1,12 +1,20 @@
-IMPORTANT - PLEASE READ: tidythemes.com/concept
 
 YOU MAY DELETE THIS FILE AND ANY OTHER FILE(S) BEFORE STARTING YOUR PROJECT
 
 - - THEME - -
 
-BlankSlate WordPress Theme | Demo: wp-themes.com/blankslate
+Bones WordPress Theme | Demo: blog.karlgroves-sandbox.com
 
 - - DESCRIPTION - -
+
+Bones Wordpress theme builds on an already "bare essentials" theme and makes improvements to the theme's accessibility.
+
+By having a good starting point will get you on your way without much trouble, but this theme in no way guarantees your site's accessibility.
+
+@TODO add resources here for learning about accessibility
+
+
+ORIGINAL DESCRIPTION- BLANKSLATE
 
 This theme is aimed at web professionals, but is of course available and supported for anyone.
 
@@ -28,6 +36,9 @@ perfect to build your own themes or use as a base for client projects.
 
 - - SUPPORT - -
 
+Visit the bitbucket repo at @TODO
+
+Support for original Blankslate theme:
 tidythemes.com/forum
 
 Enjoy. Thanks, TidyThemes | tidythemes.com
