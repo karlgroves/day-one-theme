@@ -7,7 +7,7 @@
 
 <h1 class="page-title">
 <?php 
-    printf(__('Search Results for: %s', 'blankslate'), '<span>' . get_search_query() . '</span>'); 
+    printf(__('Search Results for: %s', 'dayone'), '<span>' . get_search_query() . '</span>'); 
 ?>
 </h1>
 
@@ -33,7 +33,7 @@
 
 <h2 class="entry-title">
 <?php 
-    _e( 'Nothing Found', 'blankslate' ); 
+    _e( 'Nothing Found', 'dayone' ); 
 ?>
 </h2>
 
@@ -41,7 +41,7 @@
 
 <p>
 <?php 
-    _e('Sorry, nothing matched your search. Please try again.', 'blankslate'); 
+    _e('Sorry, nothing matched your search. Please try again.', 'dayone'); 
 ?>
 </p>
 

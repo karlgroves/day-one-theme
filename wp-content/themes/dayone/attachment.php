@@ -15,7 +15,7 @@
 <?php 
     the_title(); 
 ?> | 
-<a href="<?php echo get_permalink($post->post_parent) ?>" title="<?php printf( __( 'Return to %s', 'blankslate' ), esc_html( get_the_title($post->post_parent), 1 ) ) ?>" rev="attachment">
+<a href="<?php echo get_permalink($post->post_parent) ?>" title="<?php printf( __( 'Return to %s', 'dayone' ), esc_html( get_the_title($post->post_parent), 1 ) ) ?>" rev="attachment">
     <span class="meta-nav">&laquo; </span>
     <?php echo get_the_title($post->post_parent) ?>
 </a>
@@ -33,11 +33,11 @@
 
 <div class="nav-previous">
 <?php 
-    previous_image_link(false, sprintf(__(' %s Previous', 'blankslate'), '&larr;')); 
+    previous_image_link(false, sprintf(__(' %s Previous', 'dayone'), '&larr;')); 
 ?>
 </div>
 
-<div class="nav-next"><?php next_image_link(false, sprintf(__('Next %s', 'blankslate'), '&rarr;')); ?></div>
+<div class="nav-next"><?php next_image_link(false, sprintf(__('Next %s', 'dayone'), '&rarr;')); ?></div>
 
 </div>
 
@@ -73,7 +73,7 @@
 
 <div class="entry-footer">
 <?php 
-    edit_post_link( __( 'Edit', 'blankslate' ), "<span class=\"edit-link\">", "</span>" ); 
+    edit_post_link( __( 'Edit', 'dayone' ), "<span class=\"edit-link\">", "</span>" ); 
 ?>
 </div>
 

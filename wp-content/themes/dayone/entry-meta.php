@@ -5,18 +5,18 @@
 
 <span class="meta-prep meta-prep-author">
 <?php 
-    _e('By', 'blankslate'); 
+    _e('By', 'dayone'); 
 ?>
 </span>
 
 <span class="author vcard">
-    <a class="url fn n" href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>" title="<?php printf(__('View all articles by %s', 'blankslate'), $authordata -> display_name); ?>"><?php the_author(); ?></a></span>
+    <a class="url fn n" href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>" title="<?php printf(__('View all articles by %s', 'dayone'), $authordata -> display_name); ?>"><?php the_author(); ?></a></span>
 
 <span class="meta-sep"> | </span>
 
 <span class="meta-prep meta-prep-entry-date">
 <?php 
-    _e('Published', 'blankslate'); 
+    _e('Published', 'dayone'); 
 ?> 
 </span>
 
@@ -25,7 +25,7 @@
 </span>
 
 <?php 
-    edit_post_link( __( 'Edit', 'blankslate' ), "<span class=\"meta-sep\"> | </span><span class=\"edit-link\">", "</span>" ); 
+    edit_post_link( __( 'Edit', 'dayone' ), "<span class=\"meta-sep\"> | </span><span class=\"edit-link\">", "</span>" ); 
 ?>
 
 </div>

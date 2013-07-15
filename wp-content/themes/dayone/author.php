@@ -9,7 +9,7 @@
 
 <h1 class="page-title author">
 <?php 
-    printf( __( 'Author Archives: %s', 'blankslate' ), "<span class=\"vcard\"><a class=\"url fn n\" href=\"$authordata->user_url\" rel=\"me\">$authordata->display_name</a></span>" ); 
+    printf( __( 'Author Archives: %s', 'dayone' ), "<span class=\"vcard\"><a class=\"url fn n\" href=\"$authordata->user_url\" rel=\"me\">$authordata->display_name</a></span>" ); 
 ?>
 </h1>
 

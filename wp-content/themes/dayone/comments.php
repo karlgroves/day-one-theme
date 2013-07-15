@@ -10,7 +10,7 @@ if ( post_password_required() ) :
 
 <div class="nopassword">
 <?php 
-    _e('This post is password protected. Enter the password to view comments.', 'blankslate'); 
+    _e('This post is password protected. Enter the password to view comments.', 'dayone'); 
 ?>
 </div>
 
@@ -42,7 +42,7 @@ endif;
 
 <h3>
 <?php 
-    echo($comment_count > 1 ? '<span>' . $comment_count . '</span> ' . __('Comments', 'blankslate') : '<span>' . __('One', 'blankslate') . '</span> ' . __('Comment', 'blankslate')); ?></h3>
+    echo($comment_count > 1 ? '<span>' . $comment_count . '</span> ' . __('Comments', 'dayone') : '<span>' . __('One', 'dayone') . '</span> ' . __('Comment', 'dayone')); ?></h3>
 
 <?php 
     $total_pages = get_comment_pages_count(); 
@@ -63,7 +63,7 @@ endif;
 
 <ul>
 
-<?php wp_list_comments('type=comment&callback=blankslate_custom_comments'); ?>
+<?php wp_list_comments('type=comment&callback=dayone_custom_comments'); ?>
 
 </ul>
 
@@ -99,14 +99,14 @@ endif;
 
 <h3>
 <?php 
-    echo($ping_count > 1 ? '<span>' . $ping_count . '</span> ' . __('Trackbacks', 'blankslate') : '<span>' . __('One', 'blankslate') . '</span> ' . __('Trackback', 'blankslate')); 
+    echo($ping_count > 1 ? '<span>' . $ping_count . '</span> ' . __('Trackbacks', 'dayone') : '<span>' . __('One', 'dayone') . '</span> ' . __('Trackback', 'dayone')); 
 ?>
 </h3>
 
 <ul>
 
 <?php 
-    wp_list_comments('type=pings&callback=blankslate_custom_pings'); 
+    wp_list_comments('type=pings&callback=dayone_custom_pings'); 
 ?>
 
 </ul>

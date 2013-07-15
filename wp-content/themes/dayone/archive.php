@@ -12,7 +12,7 @@
 
 <h1 class="page-title">
 <?php 
-    printf( __( 'Daily Archives: %s', 'blankslate' ), '<span>' . get_the_time(get_option('date_format')) . '</span>' ); 
+    printf( __( 'Daily Archives: %s', 'dayone' ), '<span>' . get_the_time(get_option('date_format')) . '</span>' ); 
 ?>
 </h1>
 
@@ -20,7 +20,7 @@
 
 <h1 class="page-title">
 <?php 
-    printf( __( 'Monthly Archives: %s', 'blankslate' ), '<span>' . get_the_time('F Y') . '</span>' ); 
+    printf( __( 'Monthly Archives: %s', 'dayone' ), '<span>' . get_the_time('F Y') . '</span>' ); 
 ?>
 </h1>
 
@@ -28,7 +28,7 @@
 
 <h1 class="page-title">
 <?php 
-    printf( __( 'Yearly Archives: %s', 'blankslate' ), '<span>' . get_the_time('Y') . '</span>' ); 
+    printf( __( 'Yearly Archives: %s', 'dayone' ), '<span>' . get_the_time('Y') . '</span>' ); 
 ?>
 </h1>
 
@@ -36,7 +36,7 @@
 
 <h1 class="page-title">
 <?php 
-    _e('Blog Archives', 'blankslate'); 
+    _e('Blog Archives', 'dayone'); 
 ?>
 </h1>
 

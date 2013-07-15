@@ -8,7 +8,7 @@
 
 <h1 class="entry-title">
 <?php 
-    _e('Not Found', 'blankslate'); 
+    _e('Not Found', 'dayone'); 
 ?>
 </h1>
 
@@ -16,7 +16,7 @@
 
 <p>
 <?php 
-    _e('Nothing found for the requested page. Try a search instead?', 'blankslate'); 
+    _e('Nothing found for the requested page. Try a search instead?', 'dayone'); 
 ?>
 </p>
 

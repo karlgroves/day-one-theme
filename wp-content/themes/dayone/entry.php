@@ -8,7 +8,7 @@
     }
 ?>
  
-<a href="<?php the_permalink(); ?>" title="<?php printf(__('Read %s', 'blankslate'), the_title_attribute('echo=0')); ?>" rel="bookmark">
+<a href="<?php the_permalink(); ?>" title="<?php printf(__('Read %s', 'dayone'), the_title_attribute('echo=0')); ?>" rel="bookmark">
 <?php the_title(); ?>
 </a>
 	

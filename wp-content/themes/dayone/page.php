@@ -28,11 +28,11 @@
 ?>
 
 <?php 
-    wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'blankslate' ) . '&after=</div>'); 
+    wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'dayone' ) . '&after=</div>'); 
 ?>
 
 <?php 
-    edit_post_link( __( 'Edit', 'blankslate' ), '<div class="edit-link">', '</div>' );
+    edit_post_link( __( 'Edit', 'dayone' ), '<div class="edit-link">', '</div>' );
 ?>
 
 </div>

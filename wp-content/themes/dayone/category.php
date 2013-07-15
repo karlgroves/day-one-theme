@@ -10,7 +10,7 @@
 
 <h1 class="page-title">
 <?php 
-    _e( 'Category Archives:', 'blankslate' );
+    _e( 'Category Archives:', 'dayone' );
 ?>
 <span>
 <?php 

@@ -3,7 +3,7 @@ YOU MAY DELETE THIS FILE AND ANY OTHER FILE(S) BEFORE STARTING YOUR PROJECT
 
 - - THEME - -
 
-Bones WordPress Theme | Demo: blog.karlgroves-sandbox.com
+Day One WordPress Theme | Demo: blog.karlgroves-sandbox.com
 
 - - DESCRIPTION - -
 

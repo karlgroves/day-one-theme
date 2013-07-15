@@ -9,7 +9,7 @@
 
 <h1 class="page-title">
 <?php 
-    _e( 'Tag Archives:', 'blankslate' );
+    _e( 'Tag Archives:', 'dayone' );
 ?> 
 <span>
 <?php 
