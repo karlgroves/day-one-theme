@@ -25,7 +25,7 @@
 </span>
 
 <?php 
-    edit_post_link( __( 'Edit', 'blankslate' ), "<span class=\"meta-sep\"> | </span>\n\t\t\t\t\t\t<span class=\"edit-link\">", "</span>\n\t\t\t\t\t" ); 
+    edit_post_link( __( 'Edit', 'blankslate' ), "<span class=\"meta-sep\"> | </span><span class=\"edit-link\">", "</span>" ); 
 ?>
 
 </div>

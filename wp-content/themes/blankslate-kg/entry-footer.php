@@ -43,7 +43,7 @@
 <?php else : ?>
 
 <?php 
-    the_tags('<span class="tag-links"><span class="entry-footer-prep entry-footer-prep-tag-links">' . __('Tagged ', 'blankslate') . '</span>', ", ", "</span>\n\t\t\t\t\t\t<span class=\"meta-sep\"> | </span>\n"); 
+    the_tags('<span class="tag-links"><span class="entry-footer-prep entry-footer-prep-tag-links">' . __('Tagged ', 'blankslate') . '</span>', ", ", "</span><span class=\"meta-sep\"> | </span>\n"); 
 ?>
 
 <?php endif; ?>
@@ -55,7 +55,7 @@
 </span>
 
 <?php 
-    edit_post_link(__('Edit', 'blankslate'), "<span class=\"meta-sep\"> | </span>\n\t\t\t\t\t\t<span class=\"edit-link\">", "</span>\n\t\t\t\t\t\n"); 
+    edit_post_link(__('Edit', 'blankslate'), "<span class=\"meta-sep\"> | </span><span class=\"edit-link\">", "</span>"); 
 ?>
 </div>
 <?php endif; ?>

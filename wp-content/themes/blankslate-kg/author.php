@@ -7,7 +7,11 @@
     the_post(); 
 ?>
 
-<h1 class="page-title author"><?php printf( __( 'Author Archives: %s', 'blankslate' ), "<span class=\"vcard\"><a class='url fn n' href='$authordata->user_url' title='$authordata->display_name' rel='me'>$authordata->display_name</a></span>" ) ?></h1>
+<h1 class="page-title author">
+<?php 
+    printf( __( 'Author Archives: %s', 'blankslate' ), "<span class=\"vcard\"><a class=\"url fn n\" href=\"$authordata->user_url\" rel=\"me\">$authordata->display_name</a></span>" ); 
+?>
+</h1>
 
 <?php 
     $authordesc = $authordata -> user_description;

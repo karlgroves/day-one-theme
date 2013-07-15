@@ -1,4 +1,6 @@
-<?php get_header(); ?>
+<?php 
+    get_header(); 
+?>
 
 <?php
     global $post;
@@ -71,7 +73,7 @@
 
 <div class="entry-footer">
 <?php 
-    edit_post_link( __( 'Edit', 'blankslate' ), "\n\t\t\t\t\t<span class=\"edit-link\">", "</span>" ); 
+    edit_post_link( __( 'Edit', 'blankslate' ), "<span class=\"edit-link\">", "</span>" ); 
 ?>
 </div>
 

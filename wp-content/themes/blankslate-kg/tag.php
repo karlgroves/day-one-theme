@@ -1,7 +1,12 @@
-<?php get_header(); ?>
+<?php 
+    get_header(); 
+?>
 
 <div id="content">
-<?php the_post(); ?>
+<?php 
+    the_post(); 
+?>
+
 <h1 class="page-title">
 <?php 
     _e( 'Tag Archives:', 'blankslate' );
@@ -12,6 +17,7 @@
 ?>
 </span>
 </h1>
+
 <?php 
     rewind_posts(); 
 ?>
@@ -27,7 +33,7 @@
 
 <?php 
     get_template_part('nav', 'below'); 
-    ?>
+?>
 </div>
 
 <?php 

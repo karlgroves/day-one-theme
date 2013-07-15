@@ -51,7 +51,11 @@ endif;
 
 <div id="comments-nav-above" class="comments-navigation">
 
-<div class="paginated-comments-links"><?php paginate_comments_links(); ?></div>
+<div class="paginated-comments-links">
+<?php 
+    paginate_comments_links(); 
+?>
+</div>
 
 </div>
 
@@ -67,7 +71,11 @@ endif;
 
 <div id="comments-nav-below" class="comments-navigation">
 
-<div class="paginated-comments-links"><?php paginate_comments_links(); ?></div>
+<div class="paginated-comments-links">
+<?php 
+    paginate_comments_links(); 
+?>
+</div>
 
 </div>
 
