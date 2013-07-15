@@ -4,7 +4,7 @@
 
 <head>
 
-<meta http-equiv="content-type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+<meta charset=<?php bloginfo('charset'); ?>" />
 
 
 <title>
@@ -13,7 +13,7 @@
 ?>
 </title>
 
-<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
+<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" />
 
 <?php 
     wp_head(); 
@@ -21,7 +21,9 @@
 
 </head>
 
+
 <body <?php body_class(); ?>>
+<a href="#container" id="skiplink">Skip to Content</a>
 
 <div id="wrapper" class="hfeed">
 
@@ -38,7 +40,7 @@
     }
  ?>
  
-<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php bloginfo( 'name' ) ?>" rel="home">
+<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
 <?php 
     bloginfo( 'name' ); 
 ?>
@@ -54,11 +56,14 @@
 ?>
 </div>
 
-<p id="site-description">
+
 <?php 
-    bloginfo( 'description' ); 
+    // print the description only if there is one.
+    $desc = get_bloginfo( 'description' ); 
+    if(strlen(trim($desc)) > 1){
+        echo '<p id="site-description">' . $desc . '</p>';
+    }
 ?>
-</p>
 
 </div>
 
@@ -80,4 +85,4 @@
 
 </header>
 
-<div id="container">
+<main id="container">

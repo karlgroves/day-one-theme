@@ -1,4 +1,8 @@
 <?php
+add_action( 'wp_enqueue_script', 'dayone_load_jquery' );
+function dayone_load_jquery() {
+    wp_enqueue_script( 'jquery' );
+}
 
 add_action('after_setup_theme', 'dayone_setup');
 function dayone_setup(){

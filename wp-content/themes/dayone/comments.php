@@ -42,7 +42,9 @@ endif;
 
 <h3>
 <?php 
-    echo($comment_count > 1 ? '<span>' . $comment_count . '</span> ' . __('Comments', 'dayone') : '<span>' . __('One', 'dayone') . '</span> ' . __('Comment', 'dayone')); ?></h3>
+    echo($comment_count > 1 ? '<span>' . $comment_count . '</span> ' . __('Comments', 'dayone') : '<span>' . __('One', 'dayone') . '</span> ' . __('Comment', 'dayone')); 
+?>
+</h3>
 
 <?php 
     $total_pages = get_comment_pages_count(); 
@@ -61,10 +63,11 @@ endif;
 
 <?php endif; ?>
 
+
 <ul>
-
-<?php wp_list_comments('type=comment&callback=dayone_custom_comments'); ?>
-
+<?php 
+    wp_list_comments('type=comment&callback=dayone_custom_comments'); 
+?>
 </ul>
 
 <?php $total_pages = get_comment_pages_count(); if ( $total_pages > 1 ) : ?>

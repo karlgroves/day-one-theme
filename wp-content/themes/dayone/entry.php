@@ -5,19 +5,23 @@
     } 
     else {
         echo '<h2 class="entry-title">';
+        // only link the post title if there are multiple post summaries on the page
+        echo '<a href="';
+        the_permalink();
+        echo ' rel="bookmark">';
     }
 ?>
  
-<a href="<?php the_permalink(); ?>" title="<?php printf(__('Read %s', 'dayone'), the_title_attribute('echo=0')); ?>" rel="bookmark">
+
 <?php the_title(); ?>
-</a>
+
 	
 <?php
     if (is_singular()) {
         echo '</h1>';
     } 
     else {
-        echo '</h2>';
+        echo '</a></h2>';
     }
  ?>
  
