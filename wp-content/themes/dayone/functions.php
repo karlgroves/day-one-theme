@@ -57,6 +57,13 @@ function dayone_add_shortcodes() {
     add_shortcode('caption', 'fixed_img_caption_shortcode');
     add_filter('img_caption_shortcode', 'dayone_img_caption_shortcode_filter',10,3);
     add_filter('widget_text', 'do_shortcode');
+	
+	//Register Scripts
+	wp_register_script('dayone-modernizer', get_template_directory_uri() . '/js/modernizr.js', array(), 1, false );
+	wp_register_script('dayone', get_template_directory_uri() . '/js/dayone.js', array('jquery'), 1, true );
+	
+	//Register CSS file
+	wp_register_style( 'dayone', get_stylesheet_uri(), array(), 1, 'all' );
 }
 
 

@@ -17,9 +17,9 @@ jQuery(document).ready(function($) {
     
     // if a table summary is empty, just remove it
     $('table[summary]').each(function(){
-    if($(this).empty()){
-        $(this).removeAttr('summary');    
-    }
-});  
+		if($(this).empty()){
+			$(this).removeAttr('summary');    
+		}
+	});  
 
 });

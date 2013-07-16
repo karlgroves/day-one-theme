@@ -12,19 +12,17 @@
     wp_title(' | ', true, 'right'); 
 ?>
 </title>
+<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+
 <?php
 /**
  * The below call to modernizr includes a modernizr script that includes every feature available
  * In final implementations, you should generate your own custom Modernizr script that has the
  * features you need.  Go to http://modernizr.com/ for more info
  */
-?>
-<script src="<?php echo get_template_directory_uri(); ?>/js/modernizr.js"></script>
-<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" />
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-
-<?php 
-    wp_enqueue_script( 'jquery' );
+	wp_enqueue_script('dayone-modernizer'); 
+	wp_enqueue_script( 'dayone' );
+	wp_enqueue_style( 'dayone' );
     wp_head(); 
 ?>
 
