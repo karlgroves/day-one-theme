@@ -12,7 +12,6 @@
     wp_title(' | ', true, 'right'); 
 ?>
 </title>
-<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
 <?php
@@ -23,6 +22,7 @@
  */
 	wp_enqueue_script('dayone-modernizer'); 
     wp_enqueue_script( 'jquery' );
+	wp_enqueue_style( 'dayone' );
     wp_head(); 
 ?>
 
