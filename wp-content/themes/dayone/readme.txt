@@ -7,14 +7,14 @@ Day One WordPress Theme | Demo: blog.karlgroves-sandbox.com
 
 - - DESCRIPTION - -
 
-Bones Wordpress theme builds on an already "bare essentials" theme and makes improvements to the theme's accessibility.
+Day One Wordpress theme builds on an already "bare essentials" theme and makes improvements to the theme's accessibility.
 
 By having a good starting point will get you on your way without much trouble, but this theme in no way guarantees your site's accessibility.
 
 @TODO add resources here for learning about accessibility
 
 
-ORIGINAL DESCRIPTION- BLANKSLATE
+ORIGINAL DESCRIPTION- BLANKSLATE THEME
 
 This theme is aimed at web professionals, but is of course available and supported for anyone.
 
@@ -28,6 +28,11 @@ tidythemes.com/supersimple
 
 - - LICENSE - -
 
+GNU General Public License | https://www.gnu.org/licenses/gpl.html
+
+Use it modify it, blah blah blah.
+
+ORIGINAL LICENSE - BLANKSLATE
 Technical Stuff: GNU General Public License | https://www.gnu.org/licenses/gpl.html
 
 Friendly Stuff:

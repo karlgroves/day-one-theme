@@ -8,13 +8,11 @@
         // only link the post title if there are multiple post summaries on the page
         echo '<a href="';
         the_permalink();
-        echo ' rel="bookmark">';
+        echo '" rel="bookmark">';
     }
 ?>
  
-
 <?php the_title(); ?>
-
 	
 <?php
     if (is_singular()) {

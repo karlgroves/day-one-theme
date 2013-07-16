@@ -2,7 +2,7 @@
     get_header(); 
 ?>
 
-<article id="content"
+<article id="content">
 <?php 
     get_template_part('nav', 'above-single'); 
 ?>

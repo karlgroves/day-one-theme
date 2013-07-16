@@ -1,8 +1,4 @@
 <?php
-add_action( 'wp_enqueue_script', 'dayone_load_jquery' );
-function dayone_load_jquery() {
-    wp_enqueue_script( 'jquery' );
-}
 
 add_action('after_setup_theme', 'dayone_setup');
 function dayone_setup(){
@@ -35,6 +31,7 @@ function dayone_title($title) {
         return $title;
     }
 }
+
 
 
 add_filter('wp_title', 'dayone_filter_wp_title');
@@ -172,10 +169,10 @@ function dayone_custom_comments($comment, $args, $depth) {
     $GLOBALS['comment'] = $comment;
     $GLOBALS['comment_depth'] = $depth;
     ?>
-    <li id="comment-<?php comment_ID() ?>" <?php comment_class() ?>>
-    <div class="comment-author vcard"><?php dayone_commenter_link() ?></div>
-    <div class="comment-meta"><?php printf(__('Posted %1$s at %2$s', 'dayone'), get_comment_date(), get_comment_time()); ?><
-    span class="meta-sep"> | </span> <a href="#comment-<?php echo get_comment_ID(); ?>" title="<?php _e('Permalink to this comment', 'dayone'); ?>"><?php _e('Permalink', 'dayone'); ?></a>
+    <li id="comment-<?php comment_ID(); ?>" <?php comment_class(); ?>>
+    <div class="comment-author vcard"><?php dayone_commenter_link(); ?></div>
+    <div class="comment-meta"><?php printf(__('Posted %1$s at %2$s', 'dayone'), get_comment_date(), get_comment_time()); ?>
+    <span class="meta-sep"> | </span> <a href="#comment-<?php echo get_comment_ID(); ?>" title="<?php _e('Permalink to this comment', 'dayone'); ?>"><?php _e('Permalink', 'dayone'); ?></a>
     <?php edit_comment_link(__('Edit', 'dayone'), ' <span class="meta-sep"> | </span> <span class="edit-link">', '</span>'); ?></div>
     <?php
     if ($comment -> comment_approved == '0') {
