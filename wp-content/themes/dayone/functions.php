@@ -60,6 +60,7 @@ function dayone_add_shortcodes() {
 	
 	//Register Scripts
 	wp_register_script('dayone-modernizer', get_template_directory_uri() . '/js/modernizr.js', array(), 1, false );
+	wp_register_script('dayone', get_template_directory_uri() . '/js/dayone.js', array('jquery'), 1, true );
 	
 	//Register CSS file
 	wp_register_style( 'dayone', get_stylesheet_uri(), array(), 1, 'all' );

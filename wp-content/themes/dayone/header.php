@@ -21,7 +21,7 @@
  * features you need.  Go to http://modernizr.com/ for more info
  */
 	wp_enqueue_script('dayone-modernizer'); 
-    wp_enqueue_script( 'jquery' );
+	wp_enqueue_script( 'dayone' );
 	wp_enqueue_style( 'dayone' );
     wp_head(); 
 ?>
