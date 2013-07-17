@@ -22,6 +22,7 @@
  */
 	wp_enqueue_script('dayone-modernizer'); 
 	wp_enqueue_script( 'dayone' );
+    wp_enqueue_style( 'dayone-normalize' );
 	wp_enqueue_style( 'dayone' );
     wp_head(); 
 ?>
