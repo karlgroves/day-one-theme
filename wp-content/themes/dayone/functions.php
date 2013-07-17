@@ -180,8 +180,8 @@ function dayone_custom_comments($comment, $args, $depth) {
     <li id="comment-<?php comment_ID(); ?>" <?php comment_class(); ?>>
     <div class="comment-author vcard"><?php dayone_commenter_link(); ?></div>
     <div class="comment-meta"><?php printf(__('Posted %1$s at %2$s', 'dayone'), get_comment_date(), get_comment_time()); ?>
-    <span class="meta-sep"> | </span> <a href="#comment-<?php echo get_comment_ID(); ?>" title="<?php _e('Permalink to this comment', 'dayone'); ?>"><?php _e('Permalink', 'dayone'); ?></a>
-    <?php edit_comment_link(__('Edit', 'dayone'), ' <span class="meta-sep"> | </span> <span class="edit-link">', '</span>'); ?></div>
+    <span class="meta-sep">&nbsp;</span> <a href="#comment-<?php echo get_comment_ID(); ?>" title="<?php _e('Permalink to this comment', 'dayone'); ?>"><?php _e('Permalink', 'dayone'); ?></a>
+    <?php edit_comment_link(__('Edit', 'dayone'), ' <span class="meta-sep">&nbsp;</span> <span class="edit-link">', '</span>'); ?></div>
     <?php
     if ($comment -> comment_approved == '0') {
          echo '<span class="unapproved">';
@@ -206,7 +206,7 @@ function dayone_custom_pings($comment, $args, $depth) {
     ?>
     <li id="comment-<?php comment_ID() ?>" <?php comment_class() ?>>
     <div class="comment-author"><?php printf(__('By %1$s on %2$s at %3$s', 'dayone'), get_comment_author_link(), get_comment_date(), get_comment_time());
-        edit_comment_link(__('Edit', 'dayone'), ' <span class="meta-sep"> | </span> <span class="edit-link">', '</span>');
+        edit_comment_link(__('Edit', 'dayone'), ' <span class="meta-sep">&nbsp;</span> <span class="edit-link">', '</span>');
     ?></div>
     <?php
     if ($comment -> comment_approved == '0') { echo '<span class="unapproved">';
@@ -219,3 +219,9 @@ function dayone_custom_pings($comment, $args, $depth) {
     </div>
 <?php 
 }
+
+
+// remove the manifest file from the <head>
+// seems the only people interested in this are script kiddies
+remove_action('wp_head', 'wlwmanifest_link');
+remove_action('wp_head', 'rsd_link');

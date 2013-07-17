@@ -14,7 +14,7 @@
 ?>
 </span>
 
-<span class="meta-sep"> | </span>
+<span class="meta-sep">&nbsp;</span>
 
 <?php else : ?>
     
@@ -26,7 +26,7 @@
 
 <?php echo get_the_category_list(', '); ?></span>
 
-<span class="meta-sep"> | </span>
+<span class="meta-sep">&nbsp;</span>
 
 <?php endif; ?>
 

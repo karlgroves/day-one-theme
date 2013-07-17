@@ -1,0 +1,196 @@
+/**
+ *     
+ * content wrapper
+ * could be a DIV or an ARTICLE
+ * 
+*/
+#content{}
+
+/**
+ * Header element
+ */
+header{}
+
+#branding{}
+
+#site-title{}
+
+#site-description{}
+
+#search{}
+
+#header-nav
+
+main{}
+
+footer{}
+
+/**
+ *     
+ *  Teh page title, dur. Typically the first h1 in the content, but sometimes h2s in lists of blog entries
+ * 
+ */
+.page-title{}
+
+/**
+ * 
+ * typically info placed as part of the title
+ * such as search terms
+ * 
+ */
+.page-title span{}
+
+/**
+ *     
+ * sidebar
+ * 
+ */
+#sidebar{}
+
+/** 
+ *     
+ * widget wrapper
+ */
+.widget-area{}
+
+/**
+ *     
+ * list of widgets
+ */
+ul.sid{}
+
+/**
+ *     
+ * search form
+ */
+form.searchform
+
+/**
+ *     
+ * the text label for the search form field
+ */
+.searchform label span{}
+
+
+/**
+ *     
+ * entry title. could be an H1 or could be an H2 depending on context
+ */
+.entry-title{}
+
+/** 
+ *     
+ * entry content
+ */
+.entry-content{}
+
+/** 
+ *     
+ * message saying no results
+ *     
+ */
+.no-results, .not-found{}
+
+/** 
+ *     
+ * the navigation links below an entry
+ *     
+ */
+#nav-below{}
+
+/** 
+ *    
+ * the navigation links above an entry
+ *     
+ */
+#nav-above{}
+
+
+/** 
+ *     
+ * older/ newer; next/ previous links
+ *     
+ */
+.nav-previous{}
+.nav-next{}
+
+
+.meta-nav{}
+
+
+/** 
+ *     
+ * DIV that holds a page link
+ *     
+ */
+.page-link{}
+
+/** 
+ *     
+ * DIV that holds an edit link
+ *     
+ */
+.edit-link{}
+
+/** 
+ *     
+ * Copyright paragraph in the footer
+ *     
+ */
+#copyright{}
+
+
+/** 
+ *     
+ * Entry summary DIV
+ *     
+ */
+.entry-summary{}
+
+
+.archive-meta{}
+
+/** 
+ *     
+ * wraps comments
+ *     
+ */
+#comments{}
+
+/** 
+ *     
+ * holds no-password message
+ *     
+ */
+.nopassword{}
+
+/**
+ *     
+ * comments list
+ *     
+ */
+#comments-list{}
+
+#comments-nav-above{}
+.comments-navigation{}
+.paginated-comments-links{}
+
+#comments-nav-below{}
+
+.comments{}
+
+#trackbacks-list{}
+
+
+#respond{}
+
+
+
+/** 
+ *     
+ * adds a visual separator that won't be read by screen readers
+ *     
+ */
+.meta-sep:after{
+	content: " | ";
+}

@@ -15,7 +15,7 @@
     </a>
 </span>
 
-<span class="meta-sep"> | </span>
+<span class="meta-sep">&nbsp;</span>
 
 <span class="meta-prep meta-prep-entry-date">
 <?php 
