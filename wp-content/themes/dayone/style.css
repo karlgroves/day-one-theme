@@ -10,7 +10,7 @@ Tags: two-columns, microformats, rtl-language-support.
 License: GNU General Public License
 License URI: https://www.gnu.org/licenses/gpl.html
 
-Day One Wordpress theme builds on an already "bare essentials" theme and makes improvements to the theme's accessibility.
+Day One Wordpress theme builds on an already "bare essentials" theme and makes improvements to the theme's accessibility. Check out the readme.txt file for more info
 
 */
 
@@ -36,10 +36,16 @@ header{}
 
 #search{}
 
-#header-nav
+#header-nav{}
 
+/**
+ *     The wrapper around main content
+ */
 main{}
 
+/**
+ *     The wrapper around footer content
+ */
 footer{}
 
 /**
@@ -86,7 +92,9 @@ form.searchform
  *     
  * the text label for the search form field
  */
-.searchform label span{}
+.searchform label span{
+    
+}
 
 
 /**
@@ -134,6 +142,13 @@ form.searchform
 
 .meta-nav{}
 
+.meta-nav.previous{
+    content: " &larr; ";
+}
+
+.meta-nav.next{
+    content: " &rarr; ";
+}
 
 /** 
  *     

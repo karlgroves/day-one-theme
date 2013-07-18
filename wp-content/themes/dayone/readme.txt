@@ -41,7 +41,7 @@ perfect to build your own themes or use as a base for client projects.
 
 - - SUPPORT - -
 
-Visit the bitbucket repo at @TODO
+For Day One support, visit the bitbucket repo at @TODO
 
 Support for original Blankslate theme:
 tidythemes.com/forum

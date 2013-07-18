@@ -55,7 +55,7 @@
 </span>
 
 <?php 
-    edit_post_link(__('Edit', 'dayone'), "<span class=\"meta-sep\"> | </span><span class=\"edit-link\">", "</span>"); 
+    edit_post_link(__('Edit', 'dayone'), "<span class=\"meta-sep\">&nbsp;</span><span class=\"edit-link\">", "</span>"); 
 ?>
 </div>
 <?php endif; ?>

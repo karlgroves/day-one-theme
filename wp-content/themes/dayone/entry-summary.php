@@ -1,6 +1,6 @@
 <div class="entry-summary">
 <?php 
-    the_excerpt(sprintf(__('continue reading %s', 'dayone'), '<span class="meta-nav previous">&rarr;</span>')); 
+    the_excerpt(sprintf(__('continue reading %s', 'dayone'), '<span class="meta-nav previous">&nbsp;</span>')); 
 ?>
 <?php
     if (is_search()) {

@@ -117,7 +117,7 @@ $preset_widgets = array (
 
 function dayone_get_page_number() {
     if (get_query_var('paged')) {
-        print ' | ' . __( 'Page ' , 'dayone') . get_query_var('paged');
+        print ' <span class="meta-sep">&nbsp;</span> ' . __( 'Page ' , 'dayone') . get_query_var('paged');
     }
 }
 
