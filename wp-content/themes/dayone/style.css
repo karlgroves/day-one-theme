@@ -1,3 +1,20 @@
+/*
+Theme Name: Day One
+Theme URI: http://www.karlgroves.com
+Description: Accessible barebones starter template based on Blankslate theme
+Author: Karl Groves
+Author URI: http://www.karlgroves.com
+Version: 1.0
+Tags: two-columns, microformats, rtl-language-support.
+
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+
+Day One Wordpress theme builds on an already "bare essentials" theme and makes improvements to the theme's accessibility.
+
+*/
+
+
 /**
  *     
  * content wrapper
@@ -183,6 +200,24 @@ form.searchform
 
 
 #respond{}
+
+
+.wp-caption{}
+
+.wp-caption-text{}
+
+.sticky{}
+
+.gallery-caption{}
+
+.bypostauthor{}
+
+.alignright{}
+
+.alignleft{}
+    
+.aligncenter{}
+
 
 
 

@@ -43,7 +43,7 @@
 <?php else : ?>
 
 <?php 
-    the_tags('<span class="tag-links"><span class="entry-footer-prep entry-footer-prep-tag-links">' . __('Tagged ', 'dayone') . '</span>', ", ", "</span><span class=\"meta-sep\"> | </span>\n"); 
+    the_tags('<span class="tag-links"><span class="entry-footer-prep entry-footer-prep-tag-links">' . __('Tagged ', 'dayone') . '</span>', ", ", "</span><span class=\"meta-sep\">&nbsp;</span>\n"); 
 ?>
 
 <?php endif; ?>

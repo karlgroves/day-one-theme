@@ -1,5 +1,7 @@
 <?php
 
+add_editor_style('style.css');
+
 add_action('after_setup_theme', 'dayone_setup');
 function dayone_setup(){
     load_theme_textdomain('dayone', get_template_directory() . '/languages');

@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 
-<html <?php language_attributes(); ?>>
+<html <?php 
+    language_attributes();
+?>
+ 
+ dir="<?php bloginfo('text_direction'); ?>">
 
 <head>
 
@@ -13,6 +17,35 @@
 ?>
 </title>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+
+
+<?php 
+// prevent bots from indexing search results
+if(is_search()) { 
+?>
+   <meta name="robots" content="noindex, nofollow" /> 
+<?php 
+}
+?>
+
+<meta name="description" content="<?php if ( is_single() ) {
+        single_post_title('', true); 
+    } else {
+        bloginfo('name'); echo " - "; bloginfo('description');
+    }
+    ?>" />
+
+
+<?php if ( is_single() ) {
+?>
+
+<meta name="revised" content="<?php the_date(); ?>" />
+
+<meta name="url" content="<?php the_permalink(); ?> " />
+
+<?php
+}
+?>
 
 <?php
 /**
