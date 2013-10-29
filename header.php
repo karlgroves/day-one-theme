@@ -134,4 +134,4 @@ if(is_search()) {
 
 </header>
 
-<main id="container">
+<main id="container" role="main">

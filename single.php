@@ -1,7 +1,6 @@
 <?php 
     get_header(); 
 ?>
-
 <article id="content">
 <?php 
     get_template_part('nav', 'above-single'); 
