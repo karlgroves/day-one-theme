@@ -1,98 +1,102 @@
-<?php 
-    get_header(); 
+<?php
+get_header();
 ?>
 
 <?php
-    global $post;
+global $post;
 ?>
 
-<div id="content">
-<?php 
-    the_post(); 
-?>
+    <div id="content">
+        <?php
+        the_post();
+        ?>
 
-<h1 class="page-title">
-<?php 
-    the_title(); 
-?> | 
-<a href="<?php echo get_permalink($post->post_parent); ?>" rev="attachment">
-    <span class="meta-nav">&laquo; </span>
-    <?php echo get_the_title($post->post_parent); ?>
-</a>
-</h1>
+        <h1 class="page-title">
+            <?php
+            the_title();
+            ?> |
+            <a href="<?php echo get_permalink($post->post_parent); ?>" rev="attachment">
+                <span class="meta-nav">&laquo; </span>
+                <?php echo get_the_title($post->post_parent); ?>
+            </a>
+        </h1>
 
-<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+        <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-<?php 
-    get_template_part('entry', 'meta'); 
-?>
+            <?php
+            get_template_part('entry', 'meta');
+            ?>
 
-<div class="entry-content">
+            <div class="entry-content">
 
-<div id="nav-above" class="navigation">
+                <div id="nav-above" class="navigation">
 
-<div class="nav-previous">
-<?php 
-    previous_image_link(false, sprintf(__(' %s Previous', 'dayone'), '&larr;')); 
-?>
-</div>
+                    <div class="nav-previous">
+                        <?php
+                        previous_image_link(false, sprintf(__(' %s Previous', 'dayone'), '&larr;'));
+                        ?>
+                    </div>
 
-<div class="nav-next"><?php next_image_link(false, sprintf(__('Next %s', 'dayone'), '&rarr;')); ?></div>
+                    <div
+                        class="nav-next"><?php next_image_link(false, sprintf(__('Next %s', 'dayone'), '&rarr;')); ?></div>
 
-</div>
+                </div>
 
-<div class="entry-attachment">
+                <div class="entry-attachment">
 
-<?php if ( wp_attachment_is_image( $post->ID ) ) : $att_image = wp_get_attachment_image_src( $post->ID, "large"); ?>
+                    <?php if (wp_attachment_is_image($post->ID)) : $att_image = wp_get_attachment_image_src($post->ID, "large"); ?>
 
-<p class="attachment">
-    <a href="<?php echo wp_get_attachment_url($post -> ID); ?>" rel="attachment">
-        <img src="<?php echo $att_image[0]; ?>" style=\"width:"<?php echo $att_image[1]; ?>"px; height:"<?php echo $att_image[2]; ?>"px;\" class="attachment-medium" alt="<?php $post -> post_excerpt; ?>" />
-    </a>
-</p>
+                        <p class="attachment">
+                            <a href="<?php echo wp_get_attachment_url($post->ID); ?>" rel="attachment">
+                                <img src="<?php echo $att_image[0]; ?>" style=\"width:"<?php echo $att_image[1]; ?>"px;
+                                     height:"<?php echo $att_image[2]; ?>"px;\" class="attachment-medium"
+                                alt="<?php $post->post_excerpt; ?>" />
+                            </a>
+                        </p>
 
-<?php else : ?>
+                    <?php else : ?>
 
-<a href="<?php echo wp_get_attachment_url($post->ID) ?>" rel="attachment"><?php echo basename($post->guid) ?></a>
+                        <a href="<?php echo wp_get_attachment_url($post->ID) ?>"
+                           rel="attachment"><?php echo basename($post->guid) ?></a>
 
-<?php endif; ?>
+                    <?php endif; ?>
 
-</div>
+                </div>
 
-<div class="entry-caption">
-<?php 
-    if ( !empty($post->post_excerpt) ){
-        the_excerpt();
-    }
-?>
-</div>
+                <div class="entry-caption">
+                    <?php
+                    if (!empty($post->post_excerpt)) {
+                        the_excerpt();
+                    }
+                    ?>
+                </div>
+
+                <?php
+                if (has_post_thumbnail()) {
+                    the_post_thumbnail();
+                }
+                ?>
+
+            </div>
+
+            <div class="entry-footer">
+                <?php
+                edit_post_link(__('Edit', 'dayone'), "<span class=\"edit-link\">", "</span>");
+                ?>
+            </div>
+
+        </div>
+
+        <?php
+        comments_template();
+        ?>
+
+    </div>
 
 <?php
-    if (has_post_thumbnail()) {
-        the_post_thumbnail();
-    }
+get_sidebar();
 ?>
 
-</div>
-
-<div class="entry-footer">
-<?php 
-    edit_post_link( __( 'Edit', 'dayone' ), "<span class=\"edit-link\">", "</span>" ); 
-?>
-</div>
-
-</div>
-
-<?php 
-    comments_template(); 
-?>
-
-</div>
-
-<?php 
-    get_sidebar(); 
-?>
-
-<?php 
-    get_footer(); 
+<?php
+get_footer();
 ?>

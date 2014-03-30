@@ -1,15 +1,15 @@
 <div class="entry-content">
-<?php
+    <?php
     if (has_post_thumbnail()) {
         the_post_thumbnail();
     }
-?>
+    ?>
 
-<?php 
-    the_content(); 
-?>
+    <?php
+    the_content();
+    ?>
 
-<?php 
-    wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'dayone' ) . '&after=</div>');
-?>
+    <?php
+    wp_link_pages('before=<div class="page-link">' . __('Pages:', 'dayone') . '&after=</div>');
+    ?>
 </div>

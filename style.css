@@ -14,46 +14,55 @@ Day One Wordpress theme builds on an already "bare essentials" theme and makes i
 
 */
 
-
 /**
  *     
  * content wrapper
  * could be a DIV or an ARTICLE
  * 
 */
-#content{}
+#content {
+}
 
 /**
  * Header element
  */
-header{}
+header {
+}
 
-#branding{}
+#branding {
+}
 
-#site-title{}
+#site-title {
+}
 
-#site-description{}
+#site-description {
+}
 
-#search{}
+#search {
+}
 
-#header-nav{}
+#header-nav {
+}
 
 /**
  *     The wrapper around main content
  */
-main{}
+main {
+}
 
 /**
  *     The wrapper around footer content
  */
-footer{}
+footer {
+}
 
 /**
  *     
  *  Teh page title, dur. Typically the first h1 in the content, but sometimes h2s in lists of blog entries
  * 
  */
-.page-title{}
+.page-title {
+}
 
 /**
  * 
@@ -61,26 +70,30 @@ footer{}
  * such as search terms
  * 
  */
-.page-title span{}
+.page-title span {
+}
 
 /**
  *     
  * sidebar
  * 
  */
-#sidebar{}
+#sidebar {
+}
 
 /** 
  *     
  * widget wrapper
  */
-.widget-area{}
+.widget-area {
+}
 
 /**
  *     
  * list of widgets
  */
-ul.sid{}
+ul.sid {
+}
 
 /**
  *     
@@ -92,61 +105,67 @@ form.searchform
  *     
  * the text label for the search form field
  */
-.searchform label span{
-    
-}
+ .searchform label span {
 
+}
 
 /**
  *     
  * entry title. could be an H1 or could be an H2 depending on context
  */
-.entry-title{}
+.entry-title {
+}
 
 /** 
  *     
  * entry content
  */
-.entry-content{}
+.entry-content {
+}
 
 /** 
  *     
  * message saying no results
  *     
  */
-.no-results, .not-found{}
+.no-results, .not-found {
+}
 
 /** 
  *     
  * the navigation links below an entry
  *     
  */
-#nav-below{}
+#nav-below {
+}
 
 /** 
  *    
  * the navigation links above an entry
  *     
  */
-#nav-above{}
+#nav-above {
+}
 
-
-/** 
+/**
  *     
  * older/ newer; next/ previous links
  *     
  */
-.nav-previous{}
-.nav-next{}
+.nav-previous {
+}
 
+.nav-next {
+}
 
-.meta-nav{}
+.meta-nav {
+}
 
-.meta-nav.previous{
+.meta-nav.previous {
     content: " &larr; ";
 }
 
-.meta-nav.next{
+.meta-nav.next {
     content: " &rarr; ";
 }
 
@@ -155,92 +174,110 @@ form.searchform
  * DIV that holds a page link
  *     
  */
-.page-link{}
+.page-link {
+}
 
 /** 
  *     
  * DIV that holds an edit link
  *     
  */
-.edit-link{}
+.edit-link {
+}
 
 /** 
  *     
  * Copyright paragraph in the footer
  *     
  */
-#copyright{}
+#copyright {
+}
 
-
-/** 
+/**
  *     
  * Entry summary DIV
  *     
  */
-.entry-summary{}
+.entry-summary {
+}
 
-
-.archive-meta{}
+.archive-meta {
+}
 
 /** 
  *     
  * wraps comments
  *     
  */
-#comments{}
+#comments {
+}
 
 /** 
  *     
  * holds no-password message
  *     
  */
-.nopassword{}
+.nopassword {
+}
 
 /**
  *     
  * comments list
  *     
  */
-#comments-list{}
+#comments-list {
+}
 
-#comments-nav-above{}
-.comments-navigation{}
-.paginated-comments-links{}
+#comments-nav-above {
+}
 
-#comments-nav-below{}
+.comments-navigation {
+}
 
-.comments{}
+.paginated-comments-links {
+}
 
-#trackbacks-list{}
+#comments-nav-below {
+}
 
+.comments {
+}
 
-#respond{}
+#trackbacks-list {
+}
 
+#respond {
+}
 
-.wp-caption{}
+.wp-caption {
+}
 
-.wp-caption-text{}
+.wp-caption-text {
+}
 
-.sticky{}
+.sticky {
+}
 
-.gallery-caption{}
+.gallery-caption {
+}
 
-.bypostauthor{}
+.bypostauthor {
+}
 
-.alignright{}
+.alignright {
+}
 
-.alignleft{}
-    
-.aligncenter{}
+.alignleft {
+}
 
+.aligncenter {
+}
 
-
-
-/** 
+/**
  *     
  * adds a visual separator that won't be read by screen readers
  *     
  */
-.meta-sep:after{
-	content: " | ";
+.meta-sep:after {
+    content: " | ";
 }

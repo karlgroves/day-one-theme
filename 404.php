@@ -1,39 +1,39 @@
-<?php 
-    get_header(); 
+<?php
+get_header();
 ?>
 
-<div id="content">
+    <div id="content">
 
-<div id="post-0" class="post error404 not-found">
+        <div id="post-0" class="post error404 not-found">
 
-<h1 class="entry-title">
-<?php 
-    _e('Not Found', 'dayone'); 
+            <h1 class="entry-title">
+                <?php
+                _e('Not Found', 'dayone');
+                ?>
+            </h1>
+
+            <div class="entry-content">
+
+                <p>
+                    <?php
+                    _e('Nothing found for the requested page. Try a search instead?', 'dayone');
+                    ?>
+                </p>
+
+                <?php
+                get_search_form();
+                ?>
+
+            </div>
+
+        </div>
+
+    </div>
+
+<?php
+get_sidebar();
 ?>
-</h1>
 
-<div class="entry-content">
-
-<p>
-<?php 
-    _e('Nothing found for the requested page. Try a search instead?', 'dayone'); 
-?>
-</p>
-
-<?php 
-    get_search_form(); 
-?>
-
-</div>
-
-</div>
-
-</div>
-
-<?php 
-    get_sidebar(); 
-?>
-
-<?php 
-    get_footer(); 
+<?php
+get_footer();
 ?>
